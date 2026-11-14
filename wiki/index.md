@@ -18,6 +18,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[cache-eviction-policy]] — LRU, LFU, FIFO, TTL: what to remove when full
 - [[cache-invalidation]] — keeping cached data fresh; thundering herd / stampede
 - [[cdn]] — servers near users that cache static files
+- [[context-engineering]] — build, version and monitor the business context agents reason with
 - [[eventual-consistency]] — copies may briefly disagree but converge; chosen for availability
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
 - [[replication]] — copies of data across servers/regions; primary/secondary
@@ -26,6 +27,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[tao]] — Facebook's sharded, cache-first graph store (case study)
 
 ## Comparisons
+- [[adlc-vs-sdlc]] — agent lifecycle (probabilistic, context + evals) vs classic software lifecycle (deterministic code)
 - [[redis-vs-memcached]] — rich data types + persistence vs simple multi-threaded KV
 
 ## Questions
@@ -35,3 +37,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[tao-the-power-of-the-graph]] — Facebook Engineering on TAO, its graph store (2013)
 - [[inside-the-software-factory]] — Factory on what a software factory is and its agent-native form (2026)
 - [[langchain-agent-development-lifecycle]] — LangChain (Harrison Chase) on the agent development lifecycle (2026)
+- [[atlan-adlc-vs-sdlc]] — Atlan on how the agent lifecycle differs from the SDLC; context as a lifecycle (2026)

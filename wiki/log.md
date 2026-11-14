@@ -13,3 +13,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-14 SCHEMA added daily-report skill + scheduled task (20:47 Asia/Kolkata, Telegram recap + quiz)
 2026-11-14 INGEST raw/articles/2026-11-14-software-factory.md → +3 pages (1 source, 1 concept, 1 topic), ~1 updated (via telegram)
 2026-11-14 INGEST raw/articles/2026-11-14-agent-development-lifecycle.md → +7 pages (1 source, 6 concepts), ~2 updated (via telegram)
+2026-11-14 INGEST raw/articles/2026-11-14-adlc-vs-sdlc.md → +3 pages (1 source, 1 comparison, 1 concept), ~5 updated (via telegram)

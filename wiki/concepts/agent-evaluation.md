@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm, evaluation, testing]
-sources: [langchain-agent-development-lifecycle]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -26,8 +26,12 @@ so you know if a change made it better or worse.
 - **Simulations:** multi-turn agents (support, coding, voice) need simulated end-to-end conversations; single-turn evals are not enough (src: [[langchain-agent-development-lifecycle]]).
 - **LLM-as-judge:** a second model scores outputs against criteria (used heavily in monitoring too, see [[agent-observability]]) (src: [[langchain-agent-development-lifecycle]]).
 
+- **Distributions, not pass/fail:** because agents are non-deterministic, ADLC measures the *spread* of quality across many scenarios and checks it stays above a threshold — accurate, grounded and cost-viable (src: [[atlan-adlc-vs-sdlc]]).
+- **Token economics:** measure cost per task at expected production volume during development; a prompt that works in testing can be unaffordable at scale (src: [[atlan-adlc-vs-sdlc]]).
+- **Evaluate against the right truth:** the harness is only meaningful if the agent has governed business context, not raw schema (see [[context-engineering]]) (src: [[atlan-adlc-vs-sdlc]]).
+
 ## Why it matters / when to use it
-Before deploying, you need a way to tell if an agent is ready — not a perfect suite, but enough to
+Arthur.ai's CEO calls a well-curated eval suite the single most important predictor of an agent's success {A}. Before deploying, you need a way to tell if an agent is ready — not a perfect suite, but enough to
 catch obvious failures, compare versions and avoid shipping blind. It replaces "vibes" with data (src: [[langchain-agent-development-lifecycle]]).
 
 ## Trade-offs
@@ -42,8 +46,10 @@ catch obvious failures, compare versions and avoid shipping blind. It replaces "
 - A coding agent: inspect a repo, change code, run tests, respond to feedback (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
+[[adlc-vs-sdlc]] — why pass/fail tests aren't enough for agents
 [[agent-development-lifecycle]] — evaluation is the Test stage
 [[agent-observability]] — production traces feed new eval examples
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
+- [[atlan-adlc-vs-sdlc]]

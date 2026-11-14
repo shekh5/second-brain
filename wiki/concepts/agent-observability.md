@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm, observability, monitoring]
-sources: [langchain-agent-development-lifecycle]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -15,6 +15,7 @@ so you can see whether it actually did the task, not just whether it responded.
 - **Trace:** the full trajectory of one run — inputs, model calls, tool calls and their outputs, and the final answer or action. "The improvement loop starts with a trace" (src: [[langchain-agent-development-lifecycle]]).
 - **Signals:** scores harvested from traces, by an LLM judge (did it answer, follow policy, use the right tone) or a simple regex (was a forbidden tool called, did a required phrase appear). Signals double as product analytics: what users ask, where agents get stuck (src: [[langchain-agent-development-lifecycle]]).
 - **Feedback:** user ratings, human reviews and judge scores stored *with* the trace, linking "the user was unhappy" to "it used the wrong tool three steps earlier" (src: [[langchain-agent-development-lifecycle]]).
+- **Drift monitoring:** track output quality over time as data, schemas, business definitions or the model change; catch regressions before users do and trigger context recalibration. Normal software has no equivalent because it doesn't depend on runtime context (src: [[atlan-adlc-vs-sdlc]]).
 - **Dashboards and alerts:** usage, feedback, latency, cost, tool calls, evaluator scores and recurring failures; alert on rising cost or latency, failing tools, falling feedback, policy-violation spikes (src: [[langchain-agent-development-lifecycle]]).
 
 ## Why it matters / when to use it
@@ -39,3 +40,4 @@ monitoring feeds [[agent-evaluation]] (src: [[langchain-agent-development-lifecy
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
+- [[atlan-adlc-vs-sdlc]]
