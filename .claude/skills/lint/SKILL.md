@@ -22,5 +22,5 @@ Then do the checks that need judgement by reading pages:
 - weak pages (no trade-offs, no examples, no sources)
 
 Fix safe things (index entries, obvious broken links). Ask before merging, deleting, or rewriting pages.
-Append a `LINT` line to `wiki/log.md` and commit `lint: <date>`.
+Append a `LINT` line to `wiki/log.md` then commit and push: `git add -A && git commit -m "lint: <date>" && git push`.
 Finish with a short report: fixed / needs your decision / suggested sources to fill gaps.

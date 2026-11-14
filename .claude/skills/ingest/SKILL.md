@@ -21,5 +21,5 @@ Follow the **Ingest** workflow in `CLAUDE.md` exactly:
 6. Update the relevant `wiki/topics/` page(s).
 7. Add every new page to `wiki/index.md`.
 8. Append one `INGEST` line to `wiki/log.md`.
-9. Commit: `git add -A && git commit -m "ingest: <slug>"`.
+9. Commit and push: `git add -A && git commit -m "ingest: <slug>" && git push`.
 10. Report: pages created, pages updated, conflicts, and 1–2 suggested next sources to read.

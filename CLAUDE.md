@@ -163,6 +163,13 @@ One line per event, newest at the bottom, fixed prefixes so it can be grepped:
 - Short paragraphs, tables for trade-offs, small diagrams where useful.
 - On system-design pages, always include a **trade-offs** section and **real-world examples**.
 
-## Git
-After each ingest, ask, or lint that changes files, commit with a message like
-`ingest: caching-basics` / `ask: redis vs memcached` / `lint: weekly`.
+## Git — commit AND push after every change
+Sessions may run in temporary cloud machines, so unpushed work can be lost.
+After each ingest, ask, lint, or any other change to files:
+
+1. `git add -A`
+2. `git commit -m "<type>: <what>"` — e.g. `ingest: caching-basics`, `ask: redis vs memcached`, `lint: 2026-11-14`
+3. `git push` (retry up to 4 times on network errors, waiting 2s, 4s, 8s, 16s)
+
+At the start of a session, run `git pull` first so you have the latest wiki.
+Never finish a task with unpushed commits; if a push fails, tell the owner.
