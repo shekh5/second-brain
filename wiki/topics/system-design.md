@@ -1,7 +1,7 @@
 ---
 type: topic
 tags: [system-design]
-sources: [caching-basics]
+sources: [caching-basics, tao-the-power-of-the-graph]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -23,18 +23,21 @@ This page is the map; each link is a concept page. ⬜ = no page yet (add a sour
 - [[cache-invalidation]] — keeping data fresh, cache stampedes
 - [[cdn]] — caching at the edge
 - [[redis-vs-memcached]]
+- [[tao]] — case study: Facebook's cache-first graph store
 
 ## 3. Scaling the web tier
 - ⬜ Load balancer
 - ⬜ Stateless services
 - ⬜ API gateway / rate limiting
 
-## 4. Data
+## 4. Data ✅ started
 - ⬜ SQL vs NoSQL
-- ⬜ Replication
-- ⬜ Sharding / partitioning
+- [[graph-data-model]] — nodes and edges instead of tables
+- [[replication]] — copies of data for availability and read scaling
+- [[sharding]] — split data across servers; watch for hot spots
 - ⬜ Consistent hashing
 - ⬜ CAP theorem
+- [[eventual-consistency]] — copies agree… eventually
 
 ## 5. Async processing
 - ⬜ Message queues

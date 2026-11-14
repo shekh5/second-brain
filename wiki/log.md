@@ -8,3 +8,5 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-14 SCHEMA option 2: telegram inbox, process-inbox + weekly-report skills
 2026-11-14 SCHEMA scheduled tasks: process-inbox daily 04:23+18:23 UTC, weekly-report Sun 10:47 UTC; Telegram send verified
 2026-11-14 INBOX processed=0 failed=1 (network policy blocks article sites)
+2026-11-14 INGEST raw/articles/2026-11-14-tao-the-power-of-the-graph.md → +6 pages, ~5 updated (via telegram)
+2026-11-14 INBOX processed=1 failed=0

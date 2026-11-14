@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [system-design, caching, consistency]
-sources: [caching-basics]
+sources: [caching-basics, tao-the-power-of-the-graph]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -34,6 +34,9 @@ Fixes (src: [[caching-basics]]):
 - **Lock / single-flight**: only one request rebuilds the value; the others wait or get the old value.
 - **Jittered TTLs**: add randomness so keys don't all expire together.
 
+## Real-world example: Facebook
+With Memcache in front of MySQL, appending one edge to a cached list forced the **whole list** to be invalidated, lowering the hit rate. Avoiding thundering herds also needed coordination that client-side code couldn't provide. Facebook's answer was [[tao]], a service that owns both the cache and its consistency. (src: [[tao-the-power-of-the-graph]])
+
 ## Why it matters
 Stale data bugs are subtle: wrong price, old profile photo, a deleted post still visible.
 How stale you can tolerate is a **product decision**, not just a technical one.
@@ -41,6 +44,8 @@ How stale you can tolerate is a **product decision**, not just a technical one.
 ## Related
 - [[cache-eviction-policy]] — TTL overlaps with eviction
 - [[cache-patterns]]
+- [[eventual-consistency]] — staleness across database copies
 
 ## Sources
 - [[caching-basics]]
+- [[tao-the-power-of-the-graph]]

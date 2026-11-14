@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [system-design, caching]
-sources: [caching-basics]
+sources: [caching-basics, tao-the-power-of-the-graph]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -32,6 +32,7 @@ Cache-aside, step by step:
 ## When to use which
 - **Cache-aside**: default choice for read-heavy apps. Only data that is actually requested gets cached.
 - **Write-through**: when reads right after writes must be fresh (e.g. user settings).
+- Facebook's [[tao]] uses a two-tier **write-through** cache: writes pass through follower and leader caches to MySQL, and caches are updated as the reply comes back. This makes read-after-write easier. (src: [[tao-the-power-of-the-graph]])
 - **Write-back**: very write-heavy workloads where losing a few seconds of data is acceptable (e.g. view counters, analytics). (note: general knowledge, not from a source)
 
 ## Trade-offs
@@ -47,3 +48,4 @@ Cache-aside, step by step:
 
 ## Sources
 - [[caching-basics]]
+- [[tao-the-power-of-the-graph]]

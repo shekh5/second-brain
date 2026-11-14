@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [system-design, caching, performance]
-sources: [caching-basics]
+sources: [caching-basics, tao-the-power-of-the-graph]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -38,6 +38,8 @@ roughly 10,000–100,000× slower. (src: [[caching-basics]])
 (src: [[caching-basics]])
 
 ## Why it matters / when to use it
+> **Lesson from Facebook:** a plain cache like Memcache won't fill itself on a miss or keep itself consistent. When every engineer has to handle that, bugs and stale data follow. (src: [[tao-the-power-of-the-graph]])
+
 - Data is **read much more often than written** (profiles, product pages, feeds).
 - The source is **slow or expensive** (DB joins, external APIs, ML inference).
 - A slightly **stale answer is acceptable** for a short time.
@@ -51,7 +53,7 @@ roughly 10,000–100,000× slower. (src: [[caching-basics]])
 | | More complex code paths ([[cache-patterns]]) |
 
 ## Real-world examples
-- Facebook: huge Memcached fleet in front of its databases. (src: [[caching-basics]])
+- Facebook: huge Memcached fleet in front of its databases. (src: [[caching-basics]]) Later it built [[tao]], which puts two tiers of cache (followers, leaders) inside one graph service, so product engineers no longer manage the cache by hand. (src: [[tao-the-power-of-the-graph]])
 - Twitter/X: timelines cached in Redis. (src: [[caching-basics]])
 - Netflix: video cached on CDN boxes close to viewers. (src: [[caching-basics]])
 
@@ -64,3 +66,4 @@ roughly 10,000–100,000× slower. (src: [[caching-basics]])
 
 ## Sources
 - [[caching-basics]]
+- [[tao-the-power-of-the-graph]]

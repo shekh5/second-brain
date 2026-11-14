@@ -1,0 +1,20 @@
+{
+  "update_id": 680227776,
+  "received": "2026-11-14T08:58:22+00:00",
+  "text": "https://engineering.fb.com/2013/06/25/core-infra/tao-the-power-of-the-graph/",
+  "urls": [
+    "https://engineering.fb.com/2013/06/25/core-infra/tao-the-power-of-the-graph/"
+  ],
+  "attempts": 1,
+  "last_error": "network: engineering.fb.com not allowed by environment network policy (proxy 403)",
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-14-tao-the-power-of-the-graph.md",
+  "pages": [
+    "sources/tao-the-power-of-the-graph",
+    "concepts/tao",
+    "concepts/graph-data-model",
+    "concepts/sharding",
+    "concepts/replication",
+    "concepts/eventual-consistency"
+  ]
+}
