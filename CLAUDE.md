@@ -150,7 +150,8 @@ Append a lint entry to `log.md`.
 
 ### Inbox (automatic, via Telegram)
 The owner sends links or notes to their Telegram bot. A scheduled task runs the
-`process-inbox` skill twice a day; another runs `weekly-report` every Sunday.
+`process-inbox` skill twice a day; another runs `daily-report` every evening
+(read-only Telegram recap + quiz); another runs `weekly-report` every Sunday.
 
 ```
 inbox/

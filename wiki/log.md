@@ -10,3 +10,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-14 INBOX processed=0 failed=1 (network policy blocks article sites)
 2026-11-14 INGEST raw/articles/2026-11-14-tao-the-power-of-the-graph.md → +6 pages, ~5 updated (via telegram)
 2026-11-14 INBOX processed=1 failed=0
+2026-11-14 SCHEMA added daily-report skill + scheduled task (20:47 Asia/Kolkata, Telegram recap + quiz)
