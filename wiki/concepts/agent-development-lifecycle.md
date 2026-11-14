@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm]
-sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -43,6 +43,11 @@ and an evaluation suite — and keeps calibrating context after launch (src: [[a
 5. outer loop: deploy as a live service with drift monitoring, cost metering, audit trails
 6. governance and improvement (context calibration, rollback of context regressions)
 
+Google's tutorial uses six stages: **Setup** (teach the coding agent platform skills), **Build**,
+**Deploy**, **Govern**, **Evaluate**, **Publish** (make it available to business users) (src: [[google-automate-agent-lifecycle]]). It
+places evaluation after deploy and govern, but runs the evals in CI so regressions are caught
+before shipping (src: [[google-automate-agent-lifecycle]]).
+
 Glean (7 stages) and Salesforce (5 phases) have their own variants; the term goes back to Sierra
 and Arthur.ai in 2024 (src: [[atlan-adlc-vs-sdlc]]). Don't confuse it with "AI-SDLC", which means using AI tools to help write
 ordinary software (src: [[atlan-adlc-vs-sdlc]]).
@@ -62,9 +67,11 @@ tracing and dashboards instead of each team rebuilding it (src: [[langchain-agen
 
 ## Real-world examples
 - LangChain's own stack maps onto it: LangChain/LangGraph/Deep Agents (build), LangSmith (test, monitor, deploy) (src: [[langchain-agent-development-lifecycle]]).
+- Google: ADK (build), Agent Runtime (deploy), Agent Identity + Model Armor (govern), CI evals (evaluate), Gemini Enterprise (publish), all driven from a coding agent (src: [[google-automate-agent-lifecycle]]).
 - Other tools named per stage: CrewAI and Claude Agent SDK (build); AWS AgentCore and Temporal (runtime); Daytona and E2B (sandboxes); n8n and Claude Cowork (no-code build) (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
+[[ai-agents]] — the topic map for all agent pages
 [[adlc-vs-sdlc]] — how this differs from the classic software lifecycle
 [[context-engineering]] — the context layer that runs through every stage
 [[software-factory]] — the same feedback loop, but for producing software with coding agents
@@ -74,3 +81,4 @@ tracing and dashboards instead of each team rebuilding it (src: [[langchain-agen
 ## Sources
 - [[langchain-agent-development-lifecycle]]
 - [[atlan-adlc-vs-sdlc]]
+- [[google-automate-agent-lifecycle]]

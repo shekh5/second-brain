@@ -1,7 +1,7 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -25,7 +25,8 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 
 ## 3. Running agents safely
 - [[agent-governance]] — cost, tool access + audit trails, discoverability
-- ⬜ Prompt injection
+- [[prompt-injection]] — hidden instructions in text the agent reads; screen it, limit privileges
+- [[grounding]] — facts come from tools/code, the model only narrates
 - [[context-engineering]] — keep the agent's business context governed, versioned and fresh
 
 ## Suggested learning order
@@ -33,8 +34,10 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 2. [[adlc-vs-sdlc]]
 3. [[agent-harness]]
 4. [[agent-evaluation]]
-5. [[context-engineering]]
-6. [[agent-runtime]]
-7. [[agent-observability]]
-8. [[agent-governance]]
-9. [[software-factory]] — the same loop applied to producing software with agents
+5. [[grounding]]
+6. [[context-engineering]]
+7. [[agent-runtime]]
+8. [[agent-observability]]
+9. [[agent-governance]]
+10. [[prompt-injection]]
+11. [[software-factory]] — the same loop applied to producing software with agents

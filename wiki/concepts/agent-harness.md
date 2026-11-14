@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm]
-sources: [langchain-agent-development-lifecycle]
+sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -25,6 +25,11 @@ A *skill* is a packaged set of instructions (a workflow, a writing style, how to
 agent (note: general knowledge, not from a source). *Hooks* and *middleware* are places to run your
 own code around tool calls, approvals, auth or business rules (src: [[langchain-agent-development-lifecycle]]).
 
+**Coding agent as control plane:** Google gives a general coding agent platform *skills* (via its
+Agents CLI) and a docs MCP server so it looks up current documentation instead of relying on stale
+training data; the coding agent then scaffolds, deploys, secures, evaluates and publishes the new
+agent (src: [[google-automate-agent-lifecycle]]).
+
 ## Why it matters / when to use it
 "Building an agent" can mean very different things: a simple app may only need a tool-calling loop
 (a framework), while a long-running agent needs prompts, skills, MCP servers, middleware and
@@ -40,6 +45,7 @@ need hooks and middleware to extend behaviour in code (src: [[langchain-agent-de
 
 ## Real-world examples
 - Claude Agent SDK and LangChain Deep Agents (harnesses); LangGraph (runtime); LangChain and CrewAI (frameworks) (src: [[langchain-agent-development-lifecycle]]).
+- Google Agents CLI skills + ADK (Agent Development Kit, open source), driven from any coding agent (src: [[google-automate-agent-lifecycle]]).
 - No-code: LangSmith Fleet, Claude Cowork, n8n (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
@@ -48,3 +54,4 @@ need hooks and middleware to extend behaviour in code (src: [[langchain-agent-de
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
+- [[google-automate-agent-lifecycle]]

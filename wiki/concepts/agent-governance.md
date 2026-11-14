@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm, security, governance]
-sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -17,6 +17,11 @@ Governance sits around the whole [[agent-development-lifecycle]] (src: [[langcha
 1. **Cost** — agents can be expensive (many model calls, long context, retries, long runs). Track spend with budgets, usage monitoring, alerts and a breakdown by agent, team, model and tool (src: [[langchain-agent-development-lifecycle]]).
 2. **Tool access** — clear rules for which tools an agent may use, when, and on whose behalf. Keep **audit trails**: which agent called the tool, with what inputs and outputs, authorised by which user or policy. Use **human-in-the-loop** approval for actions touching customers, money, sensitive data or production systems — designed in from the start (src: [[langchain-agent-development-lifecycle]]).
 3. **Discoverability and reuse** — prompts, skills, tools, retrieval sources, policies and whole agents should be findable so teams don't rebuild inconsistent copies (src: [[langchain-agent-development-lifecycle]]).
+
+Google's tutorial shows concrete security controls (src: [[google-automate-agent-lifecycle]]):
+- **Agent identity:** each agent gets its own principal with least-privilege roles (no write or admin), instead of borrowing broad permissions.
+- **Egress allow-list:** route outbound traffic through a gateway that only allows named hosts (e.g. sec.gov, the news API).
+- **Input/output screening** against [[prompt-injection]] and jailbreaks.
 
 Atlan adds that agent governance covers more than code governance: context governance, drift
 monitoring, token economics and agent accountability (src: [[atlan-adlc-vs-sdlc]]). "Agent sprawl" (many teams each with
@@ -45,3 +50,4 @@ iteration *possible*, not slow it down (src: [[langchain-agent-development-lifec
 ## Sources
 - [[langchain-agent-development-lifecycle]]
 - [[atlan-adlc-vs-sdlc]]
+- [[google-automate-agent-lifecycle]]

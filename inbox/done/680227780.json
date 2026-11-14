@@ -5,5 +5,12 @@
   "urls": [
     "https://cloud.google.com/blog/topics/developers-practitioners/automate-agent-development-lifecycles-with-gemini-enterprise"
   ],
-  "attempts": 0
+  "attempts": 1,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-14-automate-agent-lifecycle-gemini.md",
+  "pages": [
+    "sources/google-automate-agent-lifecycle",
+    "concepts/grounding",
+    "concepts/prompt-injection"
+  ]
 }

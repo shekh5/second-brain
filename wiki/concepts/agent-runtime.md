@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm, deployment]
-sources: [langchain-agent-development-lifecycle]
+sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -23,6 +23,10 @@ interruptions — so a stateless web server is not enough (src: [[langchain-agen
 | **Virtual filesystem** | lighter option: files as working memory without running arbitrary code; can be backed by Postgres or S3 (src: [[langchain-agent-development-lifecycle]]) |
 | **Context hub** | a place to store, version, review and update prompts, skills and instructions, so behaviour changes without a full redeploy and non-engineers can own them (src: [[langchain-agent-development-lifecycle]]) |
 
+- **Sessions vs memory:** *sessions* hold state within one multi-turn conversation; a *memory bank* carries facts (watch-list, preferred format) across sessions (src: [[google-automate-agent-lifecycle]]).
+- **Autoscaling / scale-to-zero:** a managed runtime can shut down between uses and start again on demand (src: [[google-automate-agent-lifecycle]]).
+- **Deterministic code in the sandbox:** run joins and scoring in a code-execution sandbox, isolated from the model (src: [[google-automate-agent-lifecycle]]).
+
 ## Why it matters / when to use it
 Deployment is not just "put it on a server": the agent needs a runtime, an execution environment
 and context management to do real work (src: [[langchain-agent-development-lifecycle]]).
@@ -37,6 +41,7 @@ and context management to do real work (src: [[langchain-agent-development-lifec
 
 ## Real-world examples
 - Managed runtimes: LangSmith Deployment, AWS AgentCore; some teams build on Temporal (src: [[langchain-agent-development-lifecycle]]).
+- Google Agent Runtime with Sessions and Memory Bank, plus a managed code-execution sandbox (src: [[google-automate-agent-lifecycle]]).
 - Sandboxes: LangSmith Sandboxes, Daytona, E2B (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
@@ -46,3 +51,4 @@ and context management to do real work (src: [[langchain-agent-development-lifec
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
+- [[google-automate-agent-lifecycle]]

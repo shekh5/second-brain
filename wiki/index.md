@@ -21,6 +21,8 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[context-engineering]] — build, version and monitor the business context agents reason with
 - [[eventual-consistency]] — copies may briefly disagree but converge; chosen for availability
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
+- [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
+- [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
 - [[replication]] — copies of data across servers/regions; primary/secondary
 - [[sharding]] — splitting data across many servers; hot spots, rebalancing
 - [[software-factory]] — repeatable, measurable software delivery loop; agent-native version uses coding agents
@@ -38,3 +40,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[inside-the-software-factory]] — Factory on what a software factory is and its agent-native form (2026)
 - [[langchain-agent-development-lifecycle]] — LangChain (Harrison Chase) on the agent development lifecycle (2026)
 - [[atlan-adlc-vs-sdlc]] — Atlan on how the agent lifecycle differs from the SDLC; context as a lifecycle (2026)
+- [[google-automate-agent-lifecycle]] — Google Cloud tutorial: six-stage agent lifecycle driven from a coding agent (2026)

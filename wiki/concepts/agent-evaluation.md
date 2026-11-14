@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm, evaluation, testing]
-sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
 created: 2026-11-14
 updated: 2026-11-14
 ---
@@ -30,6 +30,10 @@ so you know if a change made it better or worse.
 - **Token economics:** measure cost per task at expected production volume during development; a prompt that works in testing can be unaffordable at scale (src: [[atlan-adlc-vs-sdlc]]).
 - **Evaluate against the right truth:** the harness is only meaningful if the agent has governed business context, not raw schema (see [[context-engineering]]) (src: [[atlan-adlc-vs-sdlc]]).
 
+- **Deterministic grounding metric:** every ID the agent cites must appear verbatim in tool output — turns "don't hallucinate" into a pass/fail gate (see [[grounding]]) (src: [[google-automate-agent-lifecycle]]).
+- **Close the loop:** cluster failures into modes, fix the prompt only for prompt-caused failures, and prove no regression against the baseline before keeping a change (src: [[google-automate-agent-lifecycle]]).
+- **Evals in CI:** run them on every change so a prompt tweak that quietly hurts grounding is caught before it ships (src: [[google-automate-agent-lifecycle]]).
+
 ## Why it matters / when to use it
 Arthur.ai's CEO calls a well-curated eval suite the single most important predictor of an agent's success {A}. Before deploying, you need a way to tell if an agent is ready — not a perfect suite, but enough to
 catch obvious failures, compare versions and avoid shipping blind. It replaces "vibes" with data (src: [[langchain-agent-development-lifecycle]]).
@@ -43,6 +47,7 @@ catch obvious failures, compare versions and avoid shipping blind. It replaces "
 
 ## Real-world examples
 - A support agent simulated against a frustrated customer: ask follow-ups, check order status, decide whether to escalate (src: [[langchain-agent-development-lifecycle]]).
+- Google's Industry Watch: a synthesised multi-turn eval set graded on task success, tool-use quality and hallucination (src: [[google-automate-agent-lifecycle]]).
 - A coding agent: inspect a repo, change code, run tests, respond to feedback (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
@@ -53,3 +58,4 @@ catch obvious failures, compare versions and avoid shipping blind. It replaces "
 ## Sources
 - [[langchain-agent-development-lifecycle]]
 - [[atlan-adlc-vs-sdlc]]
+- [[google-automate-agent-lifecycle]]
