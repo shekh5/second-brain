@@ -5,5 +5,6 @@
   "urls": [
     "https://engineering.fb.com/2013/06/25/core-infra/tao-the-power-of-the-graph/"
   ],
-  "attempts": 0
+  "attempts": 1,
+  "last_error": "network: engineering.fb.com not allowed by environment network policy (proxy 403)"
 }
