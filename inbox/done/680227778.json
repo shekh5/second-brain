@@ -1,0 +1,20 @@
+{
+  "update_id": 680227778,
+  "received": "2026-11-14T10:10:42+00:00",
+  "text": "https://www.langchain.com/blog/the-agent-development-lifecycle",
+  "urls": [
+    "https://www.langchain.com/blog/the-agent-development-lifecycle"
+  ],
+  "attempts": 1,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-14-agent-development-lifecycle.md",
+  "pages": [
+    "sources/langchain-agent-development-lifecycle",
+    "concepts/agent-development-lifecycle",
+    "concepts/agent-harness",
+    "concepts/agent-evaluation",
+    "concepts/agent-runtime",
+    "concepts/agent-observability",
+    "concepts/agent-governance"
+  ]
+}
