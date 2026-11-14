@@ -148,6 +148,21 @@ Check and report (fix only what's safe, ask about the rest):
 - stale pages (`updated` older than newer sources on the same tags)
 Append a lint entry to `log.md`.
 
+### Inbox (automatic, via Telegram)
+The owner sends links or notes to their Telegram bot. A scheduled task runs the
+`process-inbox` skill twice a day; another runs `weekly-report` every Sunday.
+
+```
+inbox/
+├── state.json   ← Telegram read position (offset). Don't edit by hand.
+├── pending/     ← waiting to be ingested (one JSON file per message)
+├── done/        ← ingested or duplicate (kept as an audit trail)
+└── failed/      ← gave up after 3 attempts; owner was told on Telegram
+reports/         ← weekly reports (not part of the wiki)
+```
+`inbox/` is a work queue, not knowledge: never link to it from wiki pages.
+Secrets (`TELEGRAM_BOT_TOKEN`) live in the environment settings, never in the repo.
+
 ## log.md format
 One line per event, newest at the bottom, fixed prefixes so it can be grepped:
 
