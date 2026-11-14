@@ -5,5 +5,12 @@
   "urls": [
     "https://factory.com/articles/what-is-a-software-factory"
   ],
-  "attempts": 0
+  "attempts": 1,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-14-software-factory.md",
+  "pages": [
+    "sources/inside-the-software-factory",
+    "concepts/software-factory",
+    "topics/ai-agents"
+  ]
 }

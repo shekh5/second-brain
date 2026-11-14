@@ -3,6 +3,7 @@
 Catalogue of every wiki page. Claude reads this first when answering questions.
 
 ## Topics
+- [[ai-agents]] — map of AI agent concepts: building, testing, deploying, governing agents
 - [[system-design]] — map of all system design concepts, with learning order
 
 ## Concepts
@@ -15,6 +16,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
 - [[replication]] — copies of data across servers/regions; primary/secondary
 - [[sharding]] — splitting data across many servers; hot spots, rebalancing
+- [[software-factory]] — repeatable, measurable software delivery loop; agent-native version uses coding agents
 - [[tao]] — Facebook's sharded, cache-first graph store (case study)
 
 ## Comparisons
@@ -25,3 +27,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 ## Sources
 - [[caching-basics]] — starter notes on caching (2026-11-14)
 - [[tao-the-power-of-the-graph]] — Facebook Engineering on TAO, its graph store (2013)
+- [[inside-the-software-factory]] — Factory on what a software factory is and its agent-native form (2026)
