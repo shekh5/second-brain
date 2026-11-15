@@ -16,3 +16,5 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-14 INGEST raw/articles/2026-11-14-adlc-vs-sdlc.md → +3 pages (1 source, 1 comparison, 1 concept), ~5 updated (via telegram)
 2026-11-14 INGEST raw/articles/2026-11-14-automate-agent-lifecycle-gemini.md → +3 pages (1 source, 2 concepts), ~7 updated (via telegram)
 2026-11-14 INBOX processed=4 failed=0
+2026-11-15 LINT 0 issues from lint.py; 1 weak page (cache-patterns: no examples), 4 terms without pages reported
+2026-11-15 REPORT reports/2026-11-15.md
