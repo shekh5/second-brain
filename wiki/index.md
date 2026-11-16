@@ -19,7 +19,9 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[cache-invalidation]] — keeping cached data fresh; thundering herd / stampede
 - [[cdn]] — servers near users that cache static files
 - [[context-engineering]] — build, version and monitor the business context agents reason with
+- [[differential-testing]] — run random inputs through production code and a reference model; flag disagreements
 - [[eventual-consistency]] — copies may briefly disagree but converge; chosen for availability
+- [[formal-verification]] — mathematically prove code meets its spec for all inputs; humans own spec, machines own proof
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
@@ -41,3 +43,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[langchain-agent-development-lifecycle]] — LangChain (Harrison Chase) on the agent development lifecycle (2026)
 - [[atlan-adlc-vs-sdlc]] — Atlan on how the agent lifecycle differs from the SDLC; context as a lifecycle (2026)
 - [[google-automate-agent-lifecycle]] — Google Cloud tutorial: six-stage agent lifecycle driven from a coding agent (2026)
+- [[lean4-formal-verification-for-engineers]] — Varun Pant (AWS) talk: Lean proofs for agent-written code, zlib, Cedar (2026)

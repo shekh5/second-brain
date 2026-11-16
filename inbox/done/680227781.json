@@ -1,0 +1,22 @@
+{
+  "update_id": 680227781,
+  "received": "2026-11-15T15:27:01+00:00",
+  "text": "https://www.youtube.com/watch?v=lRa9sPaMyy4",
+  "urls": [
+    "https://www.youtube.com/watch?v=lRa9sPaMyy4"
+  ],
+  "attempts": 3,
+  "last_error": "2026-11-16: YouTube still redirects to google.com/sorry bot check; timedtext API empty; Invidious 403, Piped 526. Only oEmbed title available: 'Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS' (AI Engineer channel)",
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-16-lean4-formal-verification.md",
+  "pages": [
+    "sources/lean4-formal-verification-for-engineers.md",
+    "concepts/formal-verification.md",
+    "concepts/differential-testing.md",
+    "concepts/agent-evaluation.md",
+    "concepts/software-factory.md",
+    "topics/ai-agents.md",
+    "index.md"
+  ],
+  "note": "YouTube transcript blocked; used video description + official ai.engineer talk write-up"
+}

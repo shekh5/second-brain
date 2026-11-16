@@ -1,9 +1,9 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-16
 ---
 
 # AI Agents — map
@@ -14,6 +14,8 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 
 ## 1. Agents in software delivery
 - [[software-factory]] — a repeatable delivery loop where coding agents write more of the patches
+- [[formal-verification]] — prove agent-written code meets a human-owned spec (Lean, Verus, kernels)
+- [[differential-testing]] — compare production code with a reference model on millions of random inputs
 
 ## 2. The agent development lifecycle
 - [[agent-development-lifecycle]] — build → test → deploy → monitor, then iterate; governance around it
@@ -41,3 +43,5 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 9. [[agent-governance]]
 10. [[prompt-injection]]
 11. [[software-factory]] — the same loop applied to producing software with agents
+12. [[formal-verification]] — how to trust what the factory produces
+13. [[differential-testing]]

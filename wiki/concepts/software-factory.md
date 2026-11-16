@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, software-engineering, devops]
-sources: [inside-the-software-factory]
+sources: [inside-the-software-factory, lean4-formal-verification-for-engineers]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-16
 ---
 
 # Software factory
@@ -58,6 +58,7 @@ mistakes into tests or checks; fix broken setup before adding volume (src: [[ins
 - **Groq, Empower, Nav:** report faster features and shorter incident response — self-reported by the vendor's customers, not universal benchmarks (src: [[inside-the-software-factory]]).
 
 ## Related
+[[formal-verification]] — proving agent-written code correct, since tests and human review can't keep up with agent throughput (src: [[lean4-formal-verification-for-engineers]])
 [[agent-development-lifecycle]] — the same build → test → ship → monitor loop, applied to building agents themselves
 
 ## Sources

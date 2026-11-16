@@ -3,7 +3,7 @@ type: concept
 tags: [ai-agents, llm, evaluation, testing]
 sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-16
 ---
 
 # Agent evaluation (evals)
@@ -51,6 +51,7 @@ catch obvious failures, compare versions and avoid shipping blind. It replaces "
 - A coding agent: inspect a repo, change code, run tests, respond to feedback (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
+[[formal-verification]] — for code an agent writes, a proof can replace probabilistic judging (see [[lean4-formal-verification-for-engineers]])
 [[adlc-vs-sdlc]] — why pass/fail tests aren't enough for agents
 [[agent-development-lifecycle]] — evaluation is the Test stage
 [[agent-observability]] — production traces feed new eval examples
