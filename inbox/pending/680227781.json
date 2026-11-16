@@ -5,6 +5,6 @@
   "urls": [
     "https://www.youtube.com/watch?v=lRa9sPaMyy4"
   ],
-  "attempts": 1,
-  "last_error": "YouTube blocks this server (redirect to google.com/sorry bot check); no transcript or description obtainable. Only oEmbed title: 'Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS' (AI Engineer channel)"
+  "attempts": 2,
+  "last_error": "2026-11-16: YouTube still redirects to google.com/sorry bot check; timedtext API empty; Invidious 403, Piped 526. Only oEmbed title available: 'Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS' (AI Engineer channel)"
 }

@@ -19,3 +19,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-15 LINT 0 issues from lint.py; 1 weak page (cache-patterns: no examples), 4 terms without pages reported
 2026-11-15 REPORT reports/2026-11-15.md
 2026-11-15 INBOX processed=0 failed=1 (youtube bot-check blocked lRa9sPaMyy4, will retry)
+2026-11-16 INBOX processed=0 failed=1 (youtube bot-check blocked lRa9sPaMyy4, attempt 2/3, will retry)
