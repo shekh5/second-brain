@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, llm]
-sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle]
+sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle, self-improvement-memory-crsi]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # Agent harness (and frameworks vs runtimes)
@@ -30,6 +30,12 @@ Agents CLI) and a docs MCP server so it looks up current documentation instead o
 training data; the coding agent then scaffolds, deploys, secures, evaluates and publishes the new
 agent (src: [[google-automate-agent-lifecycle]]).
 
+**Harnesses can be tuned automatically.** Improving the harness (context, tools, execution flow)
+can raise an agent's score without changing model weights, and [[recursive-self-improvement]] loops
+let LLMs propose and test harness edits on their own (src: [[self-improvement-memory-crsi]]). A
+harness tuned for one model does not always suit another: an Opus-evolved harness scored below the
+plain seed harness when run with Gemini (src: [[self-improvement-memory-crsi]]).
+
 ## Why it matters / when to use it
 "Building an agent" can mean very different things: a simple app may only need a tool-calling loop
 (a framework), while a long-running agent needs prompts, skills, MCP servers, middleware and
@@ -46,12 +52,15 @@ need hooks and middleware to extend behaviour in code (src: [[langchain-agent-de
 ## Real-world examples
 - Claude Agent SDK and LangChain Deep Agents (harnesses); LangGraph (runtime); LangChain and CrewAI (frameworks) (src: [[langchain-agent-development-lifecycle]]).
 - Google Agents CLI skills + ADK (Agent Development Kit, open source), driven from any coding agent (src: [[google-automate-agent-lifecycle]]).
+- Meta-Harness, AHE and Terminus-2: harnesses studied and auto-evolved in Google's CRSI paper (src: [[self-improvement-memory-crsi]]).
 - No-code: LangSmith Fleet, Claude Cowork, n8n (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
 [[agent-development-lifecycle]] — choosing a layer is the Build stage
 [[agent-runtime]] — where the built agent runs in production
+[[recursive-self-improvement]] — automatically evolving the harness code
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
 - [[google-automate-agent-lifecycle]]
+- [[self-improvement-memory-crsi]]

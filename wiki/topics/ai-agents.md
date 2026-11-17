@@ -1,9 +1,9 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi]
 created: 2026-11-14
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 # AI Agents — map
@@ -31,6 +31,10 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 - [[grounding]] — facts come from tools/code, the model only narrates
 - [[context-engineering]] — keep the agent's business context governed, versioned and fresh
 
+## 4. Agents that improve themselves
+- [[recursive-self-improvement]] — LLMs propose, test and keep edits to the harness, round after round
+- [[self-improvement-memory]] — the optimizer's diary of problems, edits and outcomes; lets improvement continue after a model/benchmark change
+
 ## Suggested learning order
 1. [[agent-development-lifecycle]] — the big picture first
 2. [[adlc-vs-sdlc]]
@@ -45,3 +49,5 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 11. [[software-factory]] — the same loop applied to producing software with agents
 12. [[formal-verification]] — how to trust what the factory produces
 13. [[differential-testing]]
+14. [[recursive-self-improvement]] — after harness + evaluation make sense
+15. [[self-improvement-memory]]

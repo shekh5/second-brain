@@ -1,0 +1,20 @@
+{
+  "update_id": 680227784,
+  "received": "2026-11-17T17:29:28+00:00",
+  "text": "https://t.co/VvUfmVFC3H",
+  "urls": [
+    "https://t.co/VvUfmVFC3H"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-17-self-improvement-memory-crsi.md",
+  "resolved_url": "https://arxiv.org/abs/2611.18856",
+  "pages": [
+    "wiki/sources/self-improvement-memory-crsi.md",
+    "wiki/concepts/recursive-self-improvement.md",
+    "wiki/concepts/self-improvement-memory.md",
+    "wiki/concepts/agent-harness.md",
+    "wiki/topics/ai-agents.md",
+    "wiki/index.md"
+  ]
+}

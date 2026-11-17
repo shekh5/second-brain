@@ -25,7 +25,9 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
+- [[recursive-self-improvement]] — LLM loop that proposes, tests and keeps agent-harness edits; continual RSI across model/benchmark changes
 - [[replication]] — copies of data across servers/regions; primary/secondary
+- [[self-improvement-memory]] — SIM: optimizer's record of problems, edits, rationale, predicted vs observed outcomes
 - [[sharding]] — splitting data across many servers; hot spots, rebalancing
 - [[software-factory]] — repeatable, measurable software delivery loop; agent-native version uses coding agents
 - [[tao]] — Facebook's sharded, cache-first graph store (case study)
@@ -44,3 +46,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[atlan-adlc-vs-sdlc]] — Atlan on how the agent lifecycle differs from the SDLC; context as a lifecycle (2026)
 - [[google-automate-agent-lifecycle]] — Google Cloud tutorial: six-stage agent lifecycle driven from a coding agent (2026)
 - [[lean4-formal-verification-for-engineers]] — Varun Pant (AWS) talk: Lean proofs for agent-written code, zlib, Cedar (2026)
+- [[self-improvement-memory-crsi]] — Google paper: Self-Improvement Memory for continual recursive self-improvement of harnesses (2026)
