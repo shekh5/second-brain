@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, software-engineering, devops]
-sources: [inside-the-software-factory, lean4-formal-verification-for-engineers]
+sources: [inside-the-software-factory, lean4-formal-verification-for-engineers, cognition-40x-merged-prs]
 created: 2026-11-14
-updated: 2026-11-16
+updated: 2026-11-20
 ---
 
 # Software factory
@@ -35,6 +35,15 @@ agents do more of the investigation and implementation, not just build/test/depl
 per task), *sovereign intelligence* (you control the system and what it learns), and *continual
 learning* (an incident improves a test or a review instruction) (src: [[inside-the-software-factory]]).
 
+### How Cognition runs its own factory
+Cognition (maker of the Devin agent) describes an agent-native factory in practice (src: [[cognition-40x-merged-prs]]):
+- **Self-driving by default:** agents open the PRs; humans steer.
+- **Small pods with vertical ownership:** one small team owns a feature from bug report to QA.
+- **Slack as the workbench:** most work is started and reviewed from Slack.
+- **Every service runs locally** in short-lived VMs rebuilt hourly, so agents can test end to end — see [[ephemeral-environment]].
+- **Agents improve the factory itself**, and everything is measured so agents can optimise it.
+- **Jobs, not tasks:** give an agent an ongoing goal with a metric, not a single ticket (see [[long-running-agent]]).
+
 ## Why it matters / when to use it
 When requests, repositories and contributors multiply, delivery must stay dependable. The value
 shows when the next incident improves the process instead of forcing the same investigation
@@ -53,6 +62,7 @@ mistakes into tests or checks; fix broken setup before adding volume (src: [[ins
 | Self-hosting keeps control of code and data | Self-hosting means you own updates and recovery (src: [[inside-the-software-factory]]) |
 
 ## Real-world examples
+- **Cognition:** merged PRs grew 40x in a year while the engineering team grew 2.7x — company-reported, and merged PRs measure volume, not value (src: [[cognition-40x-merged-prs]]).
 - **History:** Robert Bemer wrote about a software factory at General Electric in the late 1960s; Hitachi opened its Software Works in 1969; Michael Cusumano's 1991 book *Japan's Software Factories* studied the idea (src: [[inside-the-software-factory]]).
 - **Chainguard:** one two-week agent session spanned six repositories and built 80 packages (src: [[inside-the-software-factory]]).
 - **Groq, Empower, Nav:** report faster features and shorter incident response — self-reported by the vendor's customers, not universal benchmarks (src: [[inside-the-software-factory]]).
@@ -63,3 +73,5 @@ mistakes into tests or checks; fix broken setup before adding volume (src: [[ins
 
 ## Sources
 - [[inside-the-software-factory]]
+- [[lean4-formal-verification-for-engineers]]
+- [[cognition-40x-merged-prs]]

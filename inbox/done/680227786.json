@@ -1,0 +1,18 @@
+{
+  "update_id": 680227786,
+  "received": "2026-11-20T09:06:58+00:00",
+  "text": "https://youtu.be/U92J5mCDLMc?si=KaOS2E-bvgMZTmwq",
+  "urls": [
+    "https://youtu.be/U92J5mCDLMc?si=KaOS2E-bvgMZTmwq"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-20-cognition-40x-merged-prs.md",
+  "pages": [
+    "sources/cognition-40x-merged-prs.md",
+    "concepts/ephemeral-environment.md",
+    "concepts/software-factory.md",
+    "concepts/long-running-agent.md",
+    "topics/ai-agents.md"
+  ]
+}

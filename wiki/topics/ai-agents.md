@@ -1,7 +1,7 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free, cognition-40x-merged-prs]
 created: 2026-11-14
 updated: 2026-11-20
 ---
@@ -14,6 +14,7 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 
 ## 1. Agents in software delivery
 - [[software-factory]] — a repeatable delivery loop where coding agents write more of the patches
+- [[ephemeral-environment]] — throw-away VMs with every service, rebuilt often, so agents can test their own work
 - [[formal-verification]] — prove agent-written code meets a human-owned spec (Lean, Verus, kernels)
 - [[differential-testing]] — compare production code with a reference model on millions of random inputs
 
@@ -50,7 +51,8 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 10. [[agent-governance]]
 11. [[prompt-injection]]
 12. [[software-factory]] — the same loop applied to producing software with agents
-13. [[formal-verification]] — how to trust what the factory produces
-14. [[differential-testing]]
-15. [[recursive-self-improvement]] — after harness + evaluation make sense
-16. [[self-improvement-memory]]
+13. [[ephemeral-environment]]
+14. [[formal-verification]] — how to trust what the factory produces
+15. [[differential-testing]]
+16. [[recursive-self-improvement]] — after harness + evaluation make sense
+17. [[self-improvement-memory]]

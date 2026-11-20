@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, agent-runtime, durable-execution]
-sources: [lovable-set-intelligence-free]
+sources: [lovable-set-intelligence-free, cognition-40x-merged-prs]
 created: 2026-11-20
 updated: 2026-11-20
 ---
@@ -41,6 +41,13 @@ company; their later direction was to make the runtime for one agent durable and
 (src: [[lovable-set-intelligence-free]]). Use this design when tasks are too big for one request:
 building whole apps, migrations, or ongoing maintenance (note: general knowledge, not from a source).
 
+### Jobs, not tasks
+Cognition argues for giving agents **jobs instead of tasks**: an ongoing responsibility with a
+metric to optimise, rather than one ticket. Examples: tuning inference performance on new GPUs, and
+an Android app maintained by Devin over 44 days (src: [[cognition-40x-merged-prs]]). A job is
+only possible if the agent can run for a long time — which is what the pieces above provide
+(note: Claude's link between the two sources, not stated in either).
+
 ## Trade-offs
 | Pro | Con |
 |---|---|
@@ -50,6 +57,7 @@ building whole apps, migrations, or ongoing maintenance (note: general knowledge
 
 ## Real-world examples
 - **Lovable** — durable runtime, inboxes, Git-like histories, checkpointed and forkable sandboxes for its app-building agent (src: [[lovable-set-intelligence-free]]).
+- **Cognition** — Devin kept an Android app going for 44 days as a "job" (src: [[cognition-40x-merged-prs]]).
 - Durable-execution engines such as Temporal are used to build agent runtimes (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
@@ -60,3 +68,4 @@ building whole apps, migrations, or ongoing maintenance (note: general knowledge
 ## Sources
 - [[lovable-set-intelligence-free]]
 - [[langchain-agent-development-lifecycle]]
+- [[cognition-40x-merged-prs]]

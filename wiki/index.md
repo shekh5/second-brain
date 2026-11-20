@@ -21,6 +21,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[context-engineering]] — build, version and monitor the business context agents reason with
 - [[copy-on-write]] — share data on copy, duplicate a block only when written; cheap forks and snapshots
 - [[differential-testing]] — run random inputs through production code and a reference model; flag disagreements
+- [[ephemeral-environment]] — short-lived VM with every service, rebuilt from scratch often; lets agents test end to end
 - [[eventual-consistency]] — copies may briefly disagree but converge; chosen for availability
 - [[formal-verification]] — mathematically prove code meets its spec for all inputs; humans own spec, machines own proof
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
@@ -50,3 +51,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[lean4-formal-verification-for-engineers]] — Varun Pant (AWS) talk: Lean proofs for agent-written code, zlib, Cedar (2026)
 - [[self-improvement-memory-crsi]] — Google paper: Self-Improvement Memory for continual recursive self-improvement of harnesses (2026)
 - [[lovable-set-intelligence-free]] — Fabian Hedin (Lovable CTO) talk: durable runtimes, forkable sandboxes, Rust Vite rewrite (2026)
+- [[cognition-40x-merged-prs]] — Walden Yan (Cognition CPO) talk: 40x merged PRs, pods, hourly VMs, agents given jobs (2026)
