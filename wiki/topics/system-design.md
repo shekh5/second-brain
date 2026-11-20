@@ -1,9 +1,9 @@
 ---
 type: topic
 tags: [system-design]
-sources: [caching-basics, tao-the-power-of-the-graph]
+sources: [caching-basics, tao-the-power-of-the-graph, lovable-set-intelligence-free]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-20
 ---
 
 # System Design — map
@@ -38,6 +38,7 @@ This page is the map; each link is a concept page. ⬜ = no page yet (add a sour
 - ⬜ Consistent hashing
 - ⬜ CAP theorem
 - [[eventual-consistency]] — copies agree… eventually
+- [[copy-on-write]] — share data on copy; duplicate a block only when it is changed (cheap forks/snapshots)
 
 ## 5. Async processing
 - ⬜ Message queues

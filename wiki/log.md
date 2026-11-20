@@ -24,3 +24,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-16 INBOX processed=1 failed=0
 2026-11-17 INGEST raw/articles/2026-11-17-self-improvement-memory-crsi.md → +3 pages, ~3 updated
 2026-11-17 INBOX processed=1 failed=0
+2026-11-20 INGEST raw/articles/2026-11-20-lovable-set-intelligence-free.md → +3 pages, ~4 updated

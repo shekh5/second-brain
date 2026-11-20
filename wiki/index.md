@@ -19,11 +19,13 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[cache-invalidation]] — keeping cached data fresh; thundering herd / stampede
 - [[cdn]] — servers near users that cache static files
 - [[context-engineering]] — build, version and monitor the business context agents reason with
+- [[copy-on-write]] — share data on copy, duplicate a block only when written; cheap forks and snapshots
 - [[differential-testing]] — run random inputs through production code and a reference model; flag disagreements
 - [[eventual-consistency]] — copies may briefly disagree but converge; chosen for availability
 - [[formal-verification]] — mathematically prove code meets its spec for all inputs; humans own spec, machines own proof
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
+- [[long-running-agent]] — agent working for hours/days: durable runtime, inboxes, forkable history, checkpointed sandboxes
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
 - [[recursive-self-improvement]] — LLM loop that proposes, tests and keeps agent-harness edits; continual RSI across model/benchmark changes
 - [[replication]] — copies of data across servers/regions; primary/secondary
@@ -47,3 +49,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[google-automate-agent-lifecycle]] — Google Cloud tutorial: six-stage agent lifecycle driven from a coding agent (2026)
 - [[lean4-formal-verification-for-engineers]] — Varun Pant (AWS) talk: Lean proofs for agent-written code, zlib, Cedar (2026)
 - [[self-improvement-memory-crsi]] — Google paper: Self-Improvement Memory for continual recursive self-improvement of harnesses (2026)
+- [[lovable-set-intelligence-free]] — Fabian Hedin (Lovable CTO) talk: durable runtimes, forkable sandboxes, Rust Vite rewrite (2026)

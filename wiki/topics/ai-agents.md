@@ -1,9 +1,9 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free]
 created: 2026-11-14
-updated: 2026-11-17
+updated: 2026-11-20
 ---
 
 # AI Agents — map
@@ -23,6 +23,8 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 - [[agent-harness]] — build: frameworks vs runtimes vs harnesses
 - [[agent-evaluation]] — test: datasets, metrics, experiments, simulations
 - [[agent-runtime]] — deploy: durable execution, human-in-the-loop, sandboxes, context hub
+- [[long-running-agent]] — agents that work for hours/days: inboxes, forkable histories, checkpointed sandboxes
+- [[copy-on-write]] — the trick that makes forking a whole agent sandbox cheap
 - [[agent-observability]] — monitor: traces, signals, feedback, dashboards
 
 ## 3. Running agents safely
@@ -43,11 +45,12 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 5. [[grounding]]
 6. [[context-engineering]]
 7. [[agent-runtime]]
-8. [[agent-observability]]
-9. [[agent-governance]]
-10. [[prompt-injection]]
-11. [[software-factory]] — the same loop applied to producing software with agents
-12. [[formal-verification]] — how to trust what the factory produces
-13. [[differential-testing]]
-14. [[recursive-self-improvement]] — after harness + evaluation make sense
-15. [[self-improvement-memory]]
+8. [[long-running-agent]]
+9. [[agent-observability]]
+10. [[agent-governance]]
+11. [[prompt-injection]]
+12. [[software-factory]] — the same loop applied to producing software with agents
+13. [[formal-verification]] — how to trust what the factory produces
+14. [[differential-testing]]
+15. [[recursive-self-improvement]] — after harness + evaluation make sense
+16. [[self-improvement-memory]]

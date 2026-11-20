@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, llm, deployment]
-sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle]
+sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle, lovable-set-intelligence-free]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-20
 ---
 
 # Agent runtime (deploying agents)
@@ -25,6 +25,7 @@ interruptions — so a stateless web server is not enough (src: [[langchain-agen
 
 - **Sessions vs memory:** *sessions* hold state within one multi-turn conversation; a *memory bank* carries facts (watch-list, preferred format) across sessions (src: [[google-automate-agent-lifecycle]]).
 - **Autoscaling / scale-to-zero:** a managed runtime can shut down between uses and start again on demand (src: [[google-automate-agent-lifecycle]]).
+- **Checkpoint and fork the whole machine:** Lovable checkpoints an agent's sandbox computer for fast resume and forks sandboxes using [[copy-on-write]] memory; stateless workers let them deploy without interrupting running agents (src: [[lovable-set-intelligence-free]]). See [[long-running-agent]].
 - **Deterministic code in the sandbox:** run joins and scoring in a code-execution sandbox, isolated from the model (src: [[google-automate-agent-lifecycle]]).
 
 ## Why it matters / when to use it
@@ -43,12 +44,15 @@ and context management to do real work (src: [[langchain-agent-development-lifec
 - Managed runtimes: LangSmith Deployment, AWS AgentCore; some teams build on Temporal (src: [[langchain-agent-development-lifecycle]]).
 - Google Agent Runtime with Sessions and Memory Bank, plus a managed code-execution sandbox (src: [[google-automate-agent-lifecycle]]).
 - Sandboxes: LangSmith Sandboxes, Daytona, E2B (src: [[langchain-agent-development-lifecycle]]).
+- **Lovable** built a durable runtime with agent inboxes, Git-like forkable histories and checkpointed, forkable sandboxes, after a multi-agent framework nearly failed them (src: [[lovable-set-intelligence-free]]).
 
 ## Related
 [[agent-development-lifecycle]] — the Deploy stage
 [[agent-harness]] — what you build before deploying it here
 [[agent-governance]] — human approval is also a governance control
+[[long-running-agent]] — the runtime needs when one agent works for hours or days
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
 - [[google-automate-agent-lifecycle]]
+- [[lovable-set-intelligence-free]]

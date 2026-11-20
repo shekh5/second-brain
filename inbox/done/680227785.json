@@ -1,0 +1,19 @@
+{
+  "update_id": 680227785,
+  "received": "2026-11-20T09:03:03+00:00",
+  "text": "https://youtu.be/pZWPq_ZAmM4?si=1xSrMgXP348wtFIx",
+  "urls": [
+    "https://youtu.be/pZWPq_ZAmM4?si=1xSrMgXP348wtFIx"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-20-lovable-set-intelligence-free.md",
+  "pages": [
+    "sources/lovable-set-intelligence-free.md",
+    "concepts/long-running-agent.md",
+    "concepts/copy-on-write.md",
+    "concepts/agent-runtime.md",
+    "topics/ai-agents.md",
+    "topics/system-design.md"
+  ]
+}
