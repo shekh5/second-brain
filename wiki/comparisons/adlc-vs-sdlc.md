@@ -3,7 +3,7 @@ type: comparison
 tags: [ai-agents, llm, software-engineering]
 sources: [atlan-adlc-vs-sdlc, langchain-agent-development-lifecycle]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-21
 ---
 
 # ADLC vs SDLC
