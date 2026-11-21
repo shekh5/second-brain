@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, llm, security]
-sources: [google-automate-agent-lifecycle]
+sources: [google-automate-agent-lifecycle, anatomy-of-effective-commerce-agents]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-21
 ---
 
 # Prompt injection
@@ -29,6 +29,12 @@ Defences shown in the source (src: [[google-automate-agent-lifecycle]]):
 - **Treat fetched text as untrusted** in the tool design and system instruction.
 - **Limit the blast radius:** least-privilege identity and an egress allow-list (see [[agent-governance]]), so even a hijacked agent can do little.
 
+Defences from the commerce-agent guide — **enforce rules in code, not in the prompt** (src: [[anatomy-of-effective-commerce-agents]]):
+- **Sanitise and fence** third-party content (reviews, merchant text) so it's clearly marked as data.
+- **Model proposes, human or policy engine approves** any change.
+- **Writes accept only server-issued IDs**, so a hijacked model can't invent an order or product ID.
+- **Caps on the resulting state** (e.g. max cart value or refund), checked by code.
+
 ## Why it matters / when to use it
 Any agent that reads external content and can take actions needs this. A model with no tool
 boundary "has nothing to stop a poisoned headline" (src: [[google-automate-agent-lifecycle]]).
@@ -48,3 +54,4 @@ boundary "has nothing to stop a poisoned headline" (src: [[google-automate-agent
 
 ## Sources
 - [[google-automate-agent-lifecycle]]
+- [[anatomy-of-effective-commerce-agents]]

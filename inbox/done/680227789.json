@@ -1,0 +1,22 @@
+{
+  "update_id": 680227789,
+  "received": "2026-11-21T18:20:33+00:00",
+  "text": "https://claude.com/resources/articles/the-anatomy-of-effective-commerce-agents",
+  "urls": [
+    "https://claude.com/resources/articles/the-anatomy-of-effective-commerce-agents"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-21-anatomy-of-effective-commerce-agents.md",
+  "pages": [
+    "sources/anatomy-of-effective-commerce-agents.md",
+    "concepts/agent-skill.md",
+    "concepts/prompt-caching.md",
+    "concepts/agent-memory.md",
+    "concepts/agent-evaluation.md",
+    "concepts/prompt-injection.md",
+    "concepts/agent-governance.md",
+    "concepts/caching.md",
+    "topics/ai-agents.md"
+  ]
+}

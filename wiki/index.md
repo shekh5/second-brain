@@ -13,7 +13,9 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[agent-governance]] — cost control, tool access + audit trails, reuse across many agents
 - [[agent-harness]] — agent tool layers: framework (abstractions) vs runtime (execution) vs harness (doing)
 - [[agent-observability]] — traces, signals, feedback and dashboards for agents in production
+- [[agent-memory]] — per-user facts as typed DB records; async extraction, user can view/delete, retention
 - [[agent-runtime]] — production home for agents: durable execution, human-in-the-loop, sandboxes, context hub
+- [[agent-skill]] — instructions loaded on demand; ⅓-of-traffic rule; skills vs subagents
 - [[caching]] — keep slow-to-get data in a fast store; hits, misses, hit ratio, cache layers
 - [[cache-patterns]] — cache-aside, read-through, write-through, write-back
 - [[cache-eviction-policy]] — LRU, LFU, FIFO, TTL: what to remove when full
@@ -30,6 +32,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
 - [[long-running-agent]] — agent working for hours/days: durable runtime, inboxes, forkable history, checkpointed sandboxes
 - [[opentofu]] — open-source Linux Foundation fork of Terraform; drop-in, adds state encryption
+- [[prompt-caching]] — reuse the processed, byte-identical prompt prefix; stable first, volatile last
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
 - [[recursive-self-improvement]] — LLM loop that proposes, tests and keeps agent-harness edits; continual RSI across model/benchmark changes
 - [[replication]] — copies of data across servers/regions; primary/secondary
@@ -60,3 +63,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[cognition-40x-merged-prs]] — Walden Yan (Cognition CPO) talk: 40x merged PRs, pods, hourly VMs, agents given jobs (2026)
 - [[what-is-terraform]] — GeeksforGeeks intro to Terraform: IaC, architecture, state, commands (2026)
 - [[opentofu-homepage]] — OpenTofu project homepage: why the fork exists, unique features (2026)
+- [[anatomy-of-effective-commerce-agents]] — Claude Platform guide: one model + skills + tools, caching, memory, safety in code, evals (2026)

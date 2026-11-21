@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, llm, security, governance]
-sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, anatomy-of-effective-commerce-agents]
 created: 2026-11-14
-updated: 2026-11-14
+updated: 2026-11-21
 ---
 
 # Agent governance
@@ -22,6 +22,8 @@ Google's tutorial shows concrete security controls (src: [[google-automate-agent
 - **Agent identity:** each agent gets its own principal with least-privilege roles (no write or admin), instead of borrowing broad permissions.
 - **Egress allow-list:** route outbound traffic through a gateway that only allows named hosts (e.g. sec.gov, the news API).
 - **Input/output screening** against [[prompt-injection]] and jailbreaks.
+
+The commerce-agent guide adds practical levers (src: [[anatomy-of-effective-commerce-agents]]): [[prompt-caching]] is the main cost lever; measure **cost per completed task** rather than per call; give each [[agent-skill]] and tool a **single owner team**; and enforce safety rules **in code** (policy engines, server-issued IDs, caps) rather than in the prompt.
 
 Atlan adds that agent governance covers more than code governance: context governance, drift
 monitoring, token economics and agent accountability (src: [[atlan-adlc-vs-sdlc]]). "Agent sprawl" (many teams each with
@@ -51,3 +53,4 @@ iteration *possible*, not slow it down (src: [[langchain-agent-development-lifec
 - [[langchain-agent-development-lifecycle]]
 - [[atlan-adlc-vs-sdlc]]
 - [[google-automate-agent-lifecycle]]
+- [[anatomy-of-effective-commerce-agents]]

@@ -63,6 +63,7 @@ roughly 10,000–100,000× slower. (src: [[caching-basics]])
 - [[cache-eviction-policy]] — what to remove when full
 - [[cache-invalidation]] — keeping cached data correct
 - [[cdn]] — caching at the network edge
+- [[prompt-caching]] — the same idea for LLM prompts: reuse the processed, unchanged prompt prefix
 
 ## Sources
 - [[caching-basics]]

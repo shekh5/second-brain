@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, llm, evaluation, testing]
-sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle]
+sources: [langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, anatomy-of-effective-commerce-agents]
 created: 2026-11-14
-updated: 2026-11-16
+updated: 2026-11-21
 ---
 
 # Agent evaluation (evals)
@@ -34,6 +34,13 @@ so you know if a change made it better or worse.
 - **Close the loop:** cluster failures into modes, fix the prompt only for prompt-caused failures, and prove no regression against the baseline before keeping a change (src: [[google-automate-agent-lifecycle]]).
 - **Evals in CI:** run them on every change so a prompt tweak that quietly hurts grounding is caught before it ships (src: [[google-automate-agent-lifecycle]]).
 
+### Practical eval tips from commerce agents
+- **Test snapshots of state**, not whole conversations: set up a starting state (cart, account, order), run the agent, check the resulting state (src: [[anatomy-of-effective-commerce-agents]]).
+- Include **messy starting states, negative cases** (agent should refuse or do nothing), **safety cases**, and cases that span several capabilities (src: [[anatomy-of-effective-commerce-agents]]).
+- Source cases from **subject-matter experts and real incidents** (src: [[anatomy-of-effective-commerce-agents]]).
+- Run a targeted subset in CI per change, the **full suite nightly**, then roll out to a **canary** group first (src: [[anatomy-of-effective-commerce-agents]]).
+- Pick models and effort levels by **sweeping the eval suite** and comparing **cost per completed task**; a better model should be adoptable by a config change plus an eval sweep (src: [[anatomy-of-effective-commerce-agents]]).
+
 ## Why it matters / when to use it
 Arthur.ai's CEO calls a well-curated eval suite the single most important predictor of an agent's success {A}. Before deploying, you need a way to tell if an agent is ready — not a perfect suite, but enough to
 catch obvious failures, compare versions and avoid shipping blind. It replaces "vibes" with data (src: [[langchain-agent-development-lifecycle]]).
@@ -48,6 +55,7 @@ catch obvious failures, compare versions and avoid shipping blind. It replaces "
 ## Real-world examples
 - A support agent simulated against a frustrated customer: ask follow-ups, check order status, decide whether to escalate (src: [[langchain-agent-development-lifecycle]]).
 - Google's Industry Watch: a synthesised multi-turn eval set graded on task success, tool-use quality and hallucination (src: [[google-automate-agent-lifecycle]]).
+- Commerce agents (shopping/merchant): state-snapshot evals with safety and negative cases (src: [[anatomy-of-effective-commerce-agents]]).
 - A coding agent: inspect a repo, change code, run tests, respond to feedback (src: [[langchain-agent-development-lifecycle]]).
 
 ## Related
@@ -60,3 +68,4 @@ catch obvious failures, compare versions and avoid shipping blind. It replaces "
 - [[langchain-agent-development-lifecycle]]
 - [[atlan-adlc-vs-sdlc]]
 - [[google-automate-agent-lifecycle]]
+- [[anatomy-of-effective-commerce-agents]]
