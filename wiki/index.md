@@ -4,6 +4,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 
 ## Topics
 - [[ai-agents]] — map of AI agent concepts: building, testing, deploying, governing agents
+- [[devops]] — map of DevOps & infrastructure: IaC, Terraform, environments, delivery
 - [[system-design]] — map of all system design concepts, with learning order
 
 ## Concepts
@@ -25,6 +26,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[eventual-consistency]] — copies may briefly disagree but converge; chosen for availability
 - [[formal-verification]] — mathematically prove code meets its spec for all inputs; humans own spec, machines own proof
 - [[graph-data-model]] — data as typed nodes (objects) and edges (associations)
+- [[infrastructure-as-code]] — infra defined in versioned text files; declarative, reviewable, less drift
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
 - [[long-running-agent]] — agent working for hours/days: durable runtime, inboxes, forkable history, checkpointed sandboxes
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
@@ -33,10 +35,12 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[self-improvement-memory]] — SIM: optimizer's record of problems, edits, rationale, predicted vs observed outcomes
 - [[sharding]] — splitting data across many servers; hot spots, rebalancing
 - [[software-factory]] — repeatable, measurable software delivery loop; agent-native version uses coding agents
+- [[terraform]] — HashiCorp's multi-cloud IaC tool: core, providers, state file, modules, plan/apply
 - [[tao]] — Facebook's sharded, cache-first graph store (case study)
 
 ## Comparisons
 - [[adlc-vs-sdlc]] — agent lifecycle (probabilistic, context + evals) vs classic software lifecycle (deterministic code)
+- [[terraform-vs-cloudformation]] — multi-cloud HCL + self-managed state vs AWS-only with AWS-managed state
 - [[redis-vs-memcached]] — rich data types + persistence vs simple multi-threaded KV
 
 ## Questions
@@ -52,3 +56,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[self-improvement-memory-crsi]] — Google paper: Self-Improvement Memory for continual recursive self-improvement of harnesses (2026)
 - [[lovable-set-intelligence-free]] — Fabian Hedin (Lovable CTO) talk: durable runtimes, forkable sandboxes, Rust Vite rewrite (2026)
 - [[cognition-40x-merged-prs]] — Walden Yan (Cognition CPO) talk: 40x merged PRs, pods, hourly VMs, agents given jobs (2026)
+- [[what-is-terraform]] — GeeksforGeeks intro to Terraform: IaC, architecture, state, commands (2026)

@@ -1,0 +1,18 @@
+{
+  "update_id": 680227787,
+  "received": "2026-11-21T18:19:33+00:00",
+  "text": "https://www.geeksforgeeks.org/devops/what-is-terraform/",
+  "urls": [
+    "https://www.geeksforgeeks.org/devops/what-is-terraform/"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-21-what-is-terraform.md",
+  "pages": [
+    "sources/what-is-terraform.md",
+    "concepts/infrastructure-as-code.md",
+    "concepts/terraform.md",
+    "comparisons/terraform-vs-cloudformation.md",
+    "topics/devops.md"
+  ]
+}
