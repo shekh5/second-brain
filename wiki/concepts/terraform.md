@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [devops, infrastructure-as-code, terraform]
-sources: [what-is-terraform]
+sources: [what-is-terraform, opentofu-homepage]
 created: 2026-11-21
 updated: 2026-11-21
 ---
@@ -56,7 +56,7 @@ reviewed as code (src: [[what-is-terraform]]). Always run `plan` and read it bef
 | Multi-cloud, huge provider ecosystem (src: [[what-is-terraform]]) | You manage the state file yourself — lose or corrupt it and Terraform loses track (src: [[what-is-terraform]]) |
 | `plan` shows changes before they happen (src: [[what-is-terraform]]) | Some changes destroy and recreate a resource, which can mean downtime or data loss if unnoticed (note: general knowledge, not from a source) |
 | Modules give reuse across teams (src: [[what-is-terraform]]) | Provisioners make runs less predictable (src: [[what-is-terraform]]) |
-| | Since 2023 under the Business Source License, not open source (note: general knowledge, not from a source) |
+| | Since 2023 under the Business Source License, not open source — which led to the [[opentofu]] fork (src: [[opentofu-homepage]]) |
 
 ## Real-world examples
 - Typical team setup: state in S3 with a DynamoDB lock table, modules shared through a private registry (src: [[what-is-terraform]]).
@@ -65,6 +65,8 @@ reviewed as code (src: [[what-is-terraform]]). Always run `plan` and read it bef
 ## Related
 [[infrastructure-as-code]] — the idea Terraform implements
 [[terraform-vs-cloudformation]] — vs AWS's own tool
+[[opentofu-vs-terraform]] — vs its open-source fork
 
 ## Sources
 - [[what-is-terraform]]
+- [[opentofu-homepage]]

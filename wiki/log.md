@@ -28,3 +28,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-20 INGEST raw/articles/2026-11-20-cognition-40x-merged-prs.md → +2 pages, ~4 updated
 2026-11-20 INBOX processed=2 failed=0
 2026-11-21 INGEST raw/articles/2026-11-21-what-is-terraform.md → +5 pages (1 source, 2 concepts, 1 comparison, 1 topic), ~0 updated (via telegram)
+2026-11-21 INGEST raw/articles/2026-11-21-opentofu.md → +3 pages (1 source, 1 concept, 1 comparison), ~5 updated (via telegram)

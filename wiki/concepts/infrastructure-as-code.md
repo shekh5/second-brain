@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [devops, infrastructure-as-code, system-design]
-sources: [what-is-terraform]
+sources: [what-is-terraform, opentofu-homepage]
 created: 2026-11-21
 updated: 2026-11-21
 ---
@@ -40,6 +40,8 @@ compares them with what exists, and makes the changes (src: [[what-is-terraform]
 
 ## Real-world examples
 - [[terraform]] — HashiCorp's multi-cloud declarative tool (src: [[what-is-terraform]]).
+- [[opentofu]] — the open-source, Linux Foundation fork of Terraform; same language and providers (src: [[opentofu-homepage]]).
+- IaC isn't only for clouds: OpenTofu's examples manage Cloudflare DNS records and GitHub repositories as code (src: [[opentofu-homepage]]).
 - AWS CloudFormation (AWS only) and Azure ARM templates (Azure only) — single-cloud IaC tools (src: [[what-is-terraform]]). See [[terraform-vs-cloudformation]].
 
 ## Related
@@ -48,3 +50,4 @@ compares them with what exists, and makes the changes (src: [[what-is-terraform]
 
 ## Sources
 - [[what-is-terraform]]
+- [[opentofu-homepage]]

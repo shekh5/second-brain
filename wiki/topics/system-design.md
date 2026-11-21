@@ -51,6 +51,9 @@ This page is the map; each link is a concept page. ⬜ = no page yet (add a sour
 - ⬜ Chat system
 - ⬜ Rate limiter
 
+## See also
+- [[devops]] — how the infrastructure behind these designs is provisioned and managed (Infrastructure as Code)
+
 ## Suggested learning order
 Fundamentals → Caching → Load balancer → Replication → Sharding + consistent hashing
 → CAP → Message queues → practice designs.

@@ -1,7 +1,7 @@
 ---
 type: topic
 tags: [devops]
-sources: [what-is-terraform]
+sources: [what-is-terraform, opentofu-homepage]
 created: 2026-11-21
 updated: 2026-11-21
 ---
@@ -15,6 +15,8 @@ How software gets from code to running infrastructure, and how that infrastructu
 - [[infrastructure-as-code]] — infra defined in text files, versioned and reviewed like code
 - [[terraform]] — HashiCorp's multi-cloud IaC tool: core, providers, state, modules
 - [[terraform-vs-cloudformation]] — multi-cloud vs AWS-only
+- [[opentofu]] — the open-source Linux Foundation fork of Terraform, with encrypted state
+- [[opentofu-vs-terraform]] — licence and governance, mostly the same tool
 
 ## 2. Environments
 - [[ephemeral-environment]] — short-lived environments rebuilt from scratch
@@ -28,5 +30,7 @@ How software gets from code to running infrastructure, and how that infrastructu
 1. [[infrastructure-as-code]]
 2. [[terraform]]
 3. [[terraform-vs-cloudformation]]
-4. [[ephemeral-environment]]
-5. [[software-factory]]
+4. [[opentofu]]
+5. [[opentofu-vs-terraform]]
+6. [[ephemeral-environment]]
+7. [[software-factory]]

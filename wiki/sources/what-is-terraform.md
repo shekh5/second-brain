@@ -33,4 +33,4 @@ and in production the state should live in a shared remote store with locking.
 
 ## Open questions
 - "Often replaces resources instead of modifying them in place" — true only for some attribute changes; many changes are in-place updates. Worth checking against the Terraform docs.
-- The article doesn't mention HashiCorp's 2023 licence change to the BUSL, which matters when choosing a tool (OpenTofu is the open-source fork).
+- The article doesn't mention HashiCorp's 2023 licence change to the BUSL, which matters when choosing a tool (see [[opentofu]], the open-source fork).

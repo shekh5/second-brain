@@ -29,6 +29,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[infrastructure-as-code]] — infra defined in versioned text files; declarative, reviewable, less drift
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
 - [[long-running-agent]] — agent working for hours/days: durable runtime, inboxes, forkable history, checkpointed sandboxes
+- [[opentofu]] — open-source Linux Foundation fork of Terraform; drop-in, adds state encryption
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
 - [[recursive-self-improvement]] — LLM loop that proposes, tests and keeps agent-harness edits; continual RSI across model/benchmark changes
 - [[replication]] — copies of data across servers/regions; primary/secondary
@@ -41,6 +42,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 ## Comparisons
 - [[adlc-vs-sdlc]] — agent lifecycle (probabilistic, context + evals) vs classic software lifecycle (deterministic code)
 - [[terraform-vs-cloudformation]] — multi-cloud HCL + self-managed state vs AWS-only with AWS-managed state
+- [[opentofu-vs-terraform]] — same HCL workflow; open-source community governance vs HashiCorp BUSL
 - [[redis-vs-memcached]] — rich data types + persistence vs simple multi-threaded KV
 
 ## Questions
@@ -57,3 +59,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[lovable-set-intelligence-free]] — Fabian Hedin (Lovable CTO) talk: durable runtimes, forkable sandboxes, Rust Vite rewrite (2026)
 - [[cognition-40x-merged-prs]] — Walden Yan (Cognition CPO) talk: 40x merged PRs, pods, hourly VMs, agents given jobs (2026)
 - [[what-is-terraform]] — GeeksforGeeks intro to Terraform: IaC, architecture, state, commands (2026)
+- [[opentofu-homepage]] — OpenTofu project homepage: why the fork exists, unique features (2026)
