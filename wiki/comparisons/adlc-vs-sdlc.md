@@ -52,6 +52,9 @@ staging). ADLC evaluation then showed (1) the prompt design was too expensive at
 and (2) the agent hallucinated contract terms when the context layer returned a stale schema.
 Neither problem is visible to pass/fail tests (src: [[atlan-adlc-vs-sdlc]]).
 
+## Don't confuse with
+[[ai-native-sdlc]] — the normal SDLC *run by coding agents* (intent → spec → plan → code → gated deploy). This page is about the lifecycle *of an agent* as a product.
+
 ## Sources
 - [[atlan-adlc-vs-sdlc]]
 - [[langchain-agent-development-lifecycle]]

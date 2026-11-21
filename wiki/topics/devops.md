@@ -1,7 +1,7 @@
 ---
 type: topic
 tags: [devops]
-sources: [what-is-terraform, opentofu-homepage]
+sources: [what-is-terraform, opentofu-homepage, ai-native-sdlc-playbook]
 created: 2026-11-21
 updated: 2026-11-21
 ---
@@ -25,6 +25,7 @@ How software gets from code to running infrastructure, and how that infrastructu
 ## 3. Delivery
 - ⬜ CI/CD pipelines
 - [[software-factory]] — a repeatable, measured delivery loop (agent-native version)
+- [[ai-native-sdlc]] — the SDLC rebuilt for coding agents: plan → spec → build → test → gated deploy → maintain
 
 ## Suggested learning order
 1. [[infrastructure-as-code]]
@@ -34,3 +35,4 @@ How software gets from code to running infrastructure, and how that infrastructu
 5. [[opentofu-vs-terraform]]
 6. [[ephemeral-environment]]
 7. [[software-factory]]
+8. [[ai-native-sdlc]]

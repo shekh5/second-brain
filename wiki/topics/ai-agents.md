@@ -1,7 +1,7 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free, cognition-40x-merged-prs, anatomy-of-effective-commerce-agents]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free, cognition-40x-merged-prs, anatomy-of-effective-commerce-agents, ai-native-sdlc-playbook]
 created: 2026-11-14
 updated: 2026-11-21
 ---
@@ -14,6 +14,7 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 
 ## 1. Agents in software delivery
 - [[software-factory]] — a repeatable delivery loop where coding agents write more of the patches
+- [[ai-native-sdlc]] — six stages, a committed file per stage, hooks enforce policy, humans own the prod gate
 - [[ephemeral-environment]] — throw-away VMs with every service, rebuilt often, so agents can test their own work
 - [[formal-verification]] — prove agent-written code meets a human-owned spec (Lean, Verus, kernels)
 - [[differential-testing]] — compare production code with a reference model on millions of random inputs
@@ -57,8 +58,9 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 13. [[prompt-caching]]
 14. [[prompt-injection]]
 15. [[software-factory]] — the same loop applied to producing software with agents
-16. [[ephemeral-environment]]
-17. [[formal-verification]] — how to trust what the factory produces
-18. [[differential-testing]]
-19. [[recursive-self-improvement]] — after harness + evaluation make sense
-20. [[self-improvement-memory]]
+16. [[ai-native-sdlc]]
+17. [[ephemeral-environment]]
+18. [[formal-verification]] — how to trust what the factory produces
+19. [[differential-testing]]
+20. [[recursive-self-improvement]] — after harness + evaluation make sense
+21. [[self-improvement-memory]]

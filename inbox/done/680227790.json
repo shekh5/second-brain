@@ -1,0 +1,21 @@
+{
+  "update_id": 680227790,
+  "received": "2026-11-21T18:20:43+00:00",
+  "text": "https://claude.com/resources/articles/the-ai-native-sdlc-playbook",
+  "urls": [
+    "https://claude.com/resources/articles/the-ai-native-sdlc-playbook"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-21-ai-native-sdlc-playbook.md",
+  "pages": [
+    "sources/ai-native-sdlc-playbook.md",
+    "concepts/ai-native-sdlc.md",
+    "concepts/software-factory.md",
+    "concepts/agent-governance.md",
+    "concepts/agent-skill.md",
+    "comparisons/adlc-vs-sdlc.md",
+    "topics/ai-agents.md",
+    "topics/devops.md"
+  ]
+}

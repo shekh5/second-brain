@@ -30,3 +30,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-21 INGEST raw/articles/2026-11-21-what-is-terraform.md → +5 pages (1 source, 2 concepts, 1 comparison, 1 topic), ~0 updated (via telegram)
 2026-11-21 INGEST raw/articles/2026-11-21-opentofu.md → +3 pages (1 source, 1 concept, 1 comparison), ~5 updated (via telegram)
 2026-11-21 INGEST raw/articles/2026-11-21-anatomy-of-effective-commerce-agents.md → +4 pages (1 source, 3 concepts), ~5 updated (via telegram)
+2026-11-21 INGEST raw/articles/2026-11-21-ai-native-sdlc-playbook.md → +2 pages (1 source, 1 concept), ~6 updated (via telegram)

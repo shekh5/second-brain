@@ -1,9 +1,9 @@
 ---
 type: concept
 tags: [ai-agents, software-engineering, devops]
-sources: [inside-the-software-factory, lean4-formal-verification-for-engineers, cognition-40x-merged-prs]
+sources: [inside-the-software-factory, lean4-formal-verification-for-engineers, cognition-40x-merged-prs, ai-native-sdlc-playbook]
 created: 2026-11-14
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 
 # Software factory
@@ -44,6 +44,11 @@ Cognition (maker of the Devin agent) describes an agent-native factory in practi
 - **Agents improve the factory itself**, and everything is measured so agents can optimise it.
 - **Jobs, not tasks:** give an agent an ongoing goal with a metric, not a single ticket (see [[long-running-agent]]).
 
+### Anthropic's six-stage version
+The AI-native SDLC playbook frames the factory as Plan → Design → Build → Test → Deploy → Maintain,
+where each stage commits a file (`intent.md`, `spec.md`, `plan.md`…) that the next one reads, and
+the agent can act up to the production gate but never pass it (src: [[ai-native-sdlc-playbook]]). Details: [[ai-native-sdlc]].
+
 ## Why it matters / when to use it
 When requests, repositories and contributors multiply, delivery must stay dependable. The value
 shows when the next incident improves the process instead of forcing the same investigation
@@ -69,9 +74,11 @@ mistakes into tests or checks; fix broken setup before adding volume (src: [[ins
 
 ## Related
 [[formal-verification]] — proving agent-written code correct, since tests and human review can't keep up with agent throughput (src: [[lean4-formal-verification-for-engineers]])
+[[ai-native-sdlc]] — a stage-by-stage playbook for running delivery with agents
 [[agent-development-lifecycle]] — the same build → test → ship → monitor loop, applied to building agents themselves
 
 ## Sources
 - [[inside-the-software-factory]]
 - [[lean4-formal-verification-for-engineers]]
 - [[cognition-40x-merged-prs]]
+- [[ai-native-sdlc-playbook]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 tags: [ai-agents, llm, context]
-sources: [anatomy-of-effective-commerce-agents]
+sources: [anatomy-of-effective-commerce-agents, ai-native-sdlc-playbook]
 created: 2026-11-21
 updated: 2026-11-21
 ---
@@ -34,6 +34,11 @@ prefer skills, because handoffs between agents lose state, cost more tokens and 
 Subagents still fit narrow jobs such as deep research, or a domain that already has its own
 dedicated agent (src: [[anatomy-of-effective-commerce-agents]]).
 
+### Skills advise, hooks enforce
+Skills are *advisory*: the model is guided but not forced. For rules that must always hold, the
+AI-native SDLC playbook uses deterministic hooks and managed settings instead (src: [[ai-native-sdlc-playbook]]).
+Organisation-wide skills (brand, security, compliance, UX) are applied while specs are written (src: [[ai-native-sdlc-playbook]]).
+
 ## Why it matters / when to use it
 - Keeps the base prompt short and stable — which also helps [[prompt-caching]] (note: general knowledge, not from a source).
 - Lets different teams own different capabilities: give each skill and tool a **single owner team** (src: [[anatomy-of-effective-commerce-agents]]).
@@ -57,3 +62,4 @@ dedicated agent (src: [[anatomy-of-effective-commerce-agents]]).
 
 ## Sources
 - [[anatomy-of-effective-commerce-agents]]
+- [[ai-native-sdlc-playbook]]

@@ -16,6 +16,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[agent-memory]] — per-user facts as typed DB records; async extraction, user can view/delete, retention
 - [[agent-runtime]] — production home for agents: durable execution, human-in-the-loop, sandboxes, context hub
 - [[agent-skill]] — instructions loaded on demand; ⅓-of-traffic rule; skills vs subagents
+- [[ai-native-sdlc]] — SDLC rebuilt for coding agents: intent/spec/plan files, hooks enforce, humans own prod gate
 - [[caching]] — keep slow-to-get data in a fast store; hits, misses, hit ratio, cache layers
 - [[cache-patterns]] — cache-aside, read-through, write-through, write-back
 - [[cache-eviction-policy]] — LRU, LFU, FIFO, TTL: what to remove when full
@@ -64,3 +65,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[what-is-terraform]] — GeeksforGeeks intro to Terraform: IaC, architecture, state, commands (2026)
 - [[opentofu-homepage]] — OpenTofu project homepage: why the fork exists, unique features (2026)
 - [[anatomy-of-effective-commerce-agents]] — Claude Platform guide: one model + skills + tools, caching, memory, safety in code, evals (2026)
+- [[ai-native-sdlc-playbook]] — Anthropic playbook: code no longer the bottleneck; six-stage agent-run SDLC with human gates (2026)
