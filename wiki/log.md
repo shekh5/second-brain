@@ -32,3 +32,5 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-21 INGEST raw/articles/2026-11-21-anatomy-of-effective-commerce-agents.md → +4 pages (1 source, 3 concepts), ~5 updated (via telegram)
 2026-11-21 INGEST raw/articles/2026-11-21-ai-native-sdlc-playbook.md → +2 pages (1 source, 1 concept), ~6 updated (via telegram)
 2026-11-21 INBOX processed=4 failed=0
+2026-11-22 LINT 0 issues from lint.py; 2 weak pages, 4 possibly stale agent pages, 4 terms without pages reported
+2026-11-22 REPORT reports/2026-11-22.md
