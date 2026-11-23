@@ -35,3 +35,4 @@ Append-only. One line per event. Prefixes: INGEST, ASK, LINT, SCHEMA, INBOX, REP
 2026-11-22 LINT 0 issues from lint.py; 2 weak pages, 4 possibly stale agent pages, 4 terms without pages reported
 2026-11-22 REPORT reports/2026-11-22.md
 2026-11-23 INGEST raw/articles/2026-11-23-mcpcurl.md → +2 pages (1 source, 1 concept), ~3 updated (via telegram)
+2026-11-23 INBOX processed=1 failed=0
