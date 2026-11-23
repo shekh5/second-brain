@@ -32,6 +32,7 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[infrastructure-as-code]] — infra defined in versioned text files; declarative, reviewable, less drift
 - [[grounding]] — tie every agent claim to fetched data; deterministic tools, model only narrates
 - [[long-running-agent]] — agent working for hours/days: durable runtime, inboxes, forkable history, checkpointed sandboxes
+- [[model-context-protocol]] — MCP: open standard for agents to discover and call tools on MCP servers via JSON-RPC
 - [[opentofu]] — open-source Linux Foundation fork of Terraform; drop-in, adds state encryption
 - [[prompt-caching]] — reuse the processed, byte-identical prompt prefix; stable first, volatile last
 - [[prompt-injection]] — attack via instructions hidden in text an agent reads; defences
@@ -66,3 +67,4 @@ Catalogue of every wiki page. Claude reads this first when answering questions.
 - [[opentofu-homepage]] — OpenTofu project homepage: why the fork exists, unique features (2026)
 - [[anatomy-of-effective-commerce-agents]] — Claude Platform guide: one model + skills + tools, caching, memory, safety in code, evals (2026)
 - [[ai-native-sdlc-playbook]] — Anthropic playbook: code no longer the bottleneck; six-stage agent-run SDLC with human gates (2026)
+- [[mcpcurl-readme]] — GitHub's mcpcurl: curl-like CLI that builds commands from an MCP server's tool schema (2026)

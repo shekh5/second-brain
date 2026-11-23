@@ -1,0 +1,19 @@
+{
+  "update_id": 680227791,
+  "received": "2026-11-23T13:50:08+00:00",
+  "text": "https://github.com/github/github-mcp-server/tree/main/cmd/mcpcurl",
+  "urls": [
+    "https://github.com/github/github-mcp-server/tree/main/cmd/mcpcurl"
+  ],
+  "attempts": 0,
+  "result": "ingested",
+  "raw": "raw/articles/2026-11-23-mcpcurl.md",
+  "pages": [
+    "sources/mcpcurl-readme.md",
+    "concepts/model-context-protocol.md",
+    "concepts/agent-harness.md",
+    "topics/ai-agents.md",
+    "index.md",
+    "log.md"
+  ]
+}

@@ -1,9 +1,9 @@
 ---
 type: topic
 tags: [ai-agents]
-sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free, cognition-40x-merged-prs, anatomy-of-effective-commerce-agents, ai-native-sdlc-playbook]
+sources: [inside-the-software-factory, langchain-agent-development-lifecycle, atlan-adlc-vs-sdlc, google-automate-agent-lifecycle, lean4-formal-verification-for-engineers, self-improvement-memory-crsi, lovable-set-intelligence-free, cognition-40x-merged-prs, anatomy-of-effective-commerce-agents, ai-native-sdlc-playbook, mcpcurl-readme]
 created: 2026-11-14
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 # AI Agents — map
@@ -23,6 +23,7 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 - [[agent-development-lifecycle]] — build → test → deploy → monitor, then iterate; governance around it
 - [[adlc-vs-sdlc]] — why agents need a different lifecycle than normal code
 - [[agent-harness]] — build: frameworks vs runtimes vs harnesses
+- [[model-context-protocol]] — build: MCP, the standard plug for giving agents tools (servers, tools/list, JSON-RPC)
 - [[agent-skill]] — build: instructions loaded on demand; one agent + skills beats many subagents for commerce
 - [[agent-memory]] — build: typed per-user facts in your own DB, user can view/delete
 - [[agent-evaluation]] — test: datasets, metrics, experiments, simulations
@@ -46,21 +47,22 @@ This page maps how agents are built, tested, shipped and run. ⬜ = no page yet 
 1. [[agent-development-lifecycle]] — the big picture first
 2. [[adlc-vs-sdlc]]
 3. [[agent-harness]]
-4. [[agent-skill]]
-5. [[agent-memory]]
-6. [[agent-evaluation]]
-7. [[grounding]]
-8. [[context-engineering]]
-9. [[agent-runtime]]
-10. [[long-running-agent]]
-11. [[agent-observability]]
-12. [[agent-governance]]
-13. [[prompt-caching]]
-14. [[prompt-injection]]
-15. [[software-factory]] — the same loop applied to producing software with agents
-16. [[ai-native-sdlc]]
-17. [[ephemeral-environment]]
-18. [[formal-verification]] — how to trust what the factory produces
-19. [[differential-testing]]
-20. [[recursive-self-improvement]] — after harness + evaluation make sense
-21. [[self-improvement-memory]]
+4. [[model-context-protocol]]
+5. [[agent-skill]]
+6. [[agent-memory]]
+7. [[agent-evaluation]]
+8. [[grounding]]
+9. [[context-engineering]]
+10. [[agent-runtime]]
+11. [[long-running-agent]]
+12. [[agent-observability]]
+13. [[agent-governance]]
+14. [[prompt-caching]]
+15. [[prompt-injection]]
+16. [[software-factory]] — the same loop applied to producing software with agents
+17. [[ai-native-sdlc]]
+18. [[ephemeral-environment]]
+19. [[formal-verification]] — how to trust what the factory produces
+20. [[differential-testing]]
+21. [[recursive-self-improvement]] — after harness + evaluation make sense
+22. [[self-improvement-memory]]

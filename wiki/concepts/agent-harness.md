@@ -3,7 +3,7 @@ type: concept
 tags: [ai-agents, llm]
 sources: [langchain-agent-development-lifecycle, google-automate-agent-lifecycle, self-improvement-memory-crsi]
 created: 2026-11-14
-updated: 2026-11-17
+updated: 2026-11-23
 ---
 
 # Agent harness (and frameworks vs runtimes)
@@ -21,7 +21,7 @@ LangChain splits code-first agent tools into three layers (src: [[langchain-agen
 | **Harness** | doing | prompts, skills, MCP servers, hooks, middleware, sometimes a filesystem | Deep Agents, Claude Agent SDK |
 
 A *skill* is a packaged set of instructions (a workflow, a writing style, how to use a tool) (src: [[langchain-agent-development-lifecycle]]).
-*MCP* (Model Context Protocol) is an open standard for plugging tools and data sources into an
+*MCP* ([[model-context-protocol|Model Context Protocol]]) is an open standard for plugging tools and data sources into an
 agent (note: general knowledge, not from a source). *Hooks* and *middleware* are places to run your
 own code around tool calls, approvals, auth or business rules (src: [[langchain-agent-development-lifecycle]]).
 
@@ -59,6 +59,7 @@ need hooks and middleware to extend behaviour in code (src: [[langchain-agent-de
 [[agent-development-lifecycle]] — choosing a layer is the Build stage
 [[agent-runtime]] — where the built agent runs in production
 [[recursive-self-improvement]] — automatically evolving the harness code
+[[model-context-protocol]] — the standard plug for giving a harness tools
 
 ## Sources
 - [[langchain-agent-development-lifecycle]]
